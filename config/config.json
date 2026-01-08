@@ -1,0 +1,38 @@
+{
+	"local-db": 
+	{ 
+		"username": "admin", 
+		"password": "asdf7877", 
+		"database": "nft_market", 
+		"host": "database-1.cb6kwagau9um.ap-southeast-2.rds.amazonaws.com", 
+		"dialect": "mysql", 
+		"operatorAliases" : false 
+	},
+	"local": 
+	{ 
+		"username": "admin", 
+		"password": "asdf7877", 
+		"database": "nft_market", 
+		"host": "database-1.cb6kwagau9um.ap-southeast-2.rds.amazonaws.com", 
+		"dialect": "mysql", 
+		"operatorAliases" : false 
+	},
+	"development": 
+	{ 
+		"username": "admin", 
+		"password": "asdf7877", 
+		"database": "nft_market", 
+		"host": "database-1.cb6kwagau9um.ap-southeast-2.rds.amazonaws.com", 
+		"dialect": "mysql", 
+		"operatorAliases" : false 
+	},
+	"product": 
+	{ 
+		"username": "admin", 
+		"password": "asdf7877", 
+		"database": "nft_market", 
+		"host": "database-1.cb6kwagau9um.ap-southeast-2.rds.amazonaws.com", 
+		"dialect": "mysql", 
+		"operatorAliases" : false 
+	}
+}

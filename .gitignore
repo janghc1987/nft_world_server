@@ -1,0 +1,57 @@
+# : comments
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.env
+
+# temp directories
+__models/
+_models/
+upload/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# vscode
+.vscode/
+
+# no .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in the build/ directory
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory
+doc/**/*.pdf
+
+# ignore files in logs/ directory
+logs/
+
+# ignore files in node_modules/ directory
+node_modules/
+
+config/.env_dev
+config/.env_local
+config/.env_prod
+.env
+*.env

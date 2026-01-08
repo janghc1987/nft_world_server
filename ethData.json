@@ -1,0 +1,88 @@
+{
+	"coinPwd" : "master"
+	,"eth" : {
+		"coinbase" : "0x9CdD5566f91Ecb995CA01292C5F48F5e2998214B"
+	}
+	,"token" : {
+		"contractAddr" : "0xdac17f958d2ee523a2206206994597c13d831ec7"
+		,"devAddress" : ""
+	
+	}
+	,"USDT" : {
+		"contractAddr" : "0xdac17f958d2ee523a2206206994597c13d831ec7"
+		,"devAddress" : ""
+	
+	},"USNS" : {
+		"contractAddr" : "0x2f766a83146f7eaee2c635c9f9a291e4b86f4108"
+		,"devAddress" : ""
+	
+	},"QDIA" : {
+		"contractAddr" : "0x5b92116d13e5df21a5a5c4173bee9b4daf70e005"
+		,"devAddress" : ""
+	
+	},"CSC" : {
+		"contractAddr" : "0x45B1D080A432d040b3c52222B67E09b534318d83"
+		,"devAddress" : ""
+	
+	},"GTC" : {
+		"contractAddr" : "0xaf21f6509d0e0318254d9e766a4f8c00fbdcdad8"
+		,"devAddress" : ""
+	
+	}
+	,"GEC" : {
+		"contractAddr" : "0xd73fa9b0ac3f40d095300d08543ae09c38332a58"
+		,"devAddress" : ""
+	
+	}
+	,"RCT" : {
+		"contractAddr" : "0x0b2dfd5d481f55456daed54284c99179a40451e2"
+		,"devAddress" : ""
+	
+	}
+	,"CTEX" : {
+		"contractAddr" : "0xBf2a1c3377429e11dE16E5Dd1bFf77a0EB307184",
+		"devAddress" : "",
+		"secretkey": "secret_key",
+		"passphrase" : "E35E31608A1F21E74A4502AAC12395FCC420B1519A6EBF40261A164BD6B22790",
+		"name" : "testtoken"	
+	}
+
+	,"CTEX2" : {
+		"contractAddr" : "0x8a3f90221f1e558c3f1b49769572a8f1cfcc0916",
+		"devAddress" : "",
+		"secretkey": "secret_key",
+		"passphrase" : "B241A115ED8A0548D5DE1A23857FD1E5720403310697A9F16F6CAEF4766ADB95",
+		"name" : "testtoken"	
+	}
+	,"MSC" : {
+		"contractAddr" : "0x727c8c91d520febf0d4e8e1cfac0333d6b4069d7"
+		,"devAddress" : ""
+	
+	}
+	,"MSP" : {
+		"contractAddr" : "0x727c8c91d520febf0d4e8e1cfac0333d6b4069d7"
+		,"devAddress" : ""
+	
+	},
+	"NFTM" : {
+		"contractAddr" : "0x08A302C84fb1F5D3D6cC52CE911e9544c261D899"
+		,"devAddress" : ""
+	
+	},
+	"NFT" : {
+		"contractAddr" : "0x9F94adDb0a60Cd765b0cC74fb834e4f95513438c"
+		,"devAddress" : ""
+	
+	},
+	"TVS" : {
+		"contractAddr" : "0xdb34D66dE1F5Ee546dAD6F9075169fE04e1fb772"
+		,"devAddress" : ""
+	
+	}
+
+	,"gasLimit" : 21000
+	,"tokenGasLimit" : 100000
+
+
+}
+	

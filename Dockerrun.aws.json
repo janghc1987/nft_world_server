@@ -1,0 +1,13 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "150128311360.dkr.ecr.ap-northeast-1.amazonaws.com/msc-backend-node:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "8588"
+    }
+  ],
+  "Logging": "/var/log/nginx"
+}
