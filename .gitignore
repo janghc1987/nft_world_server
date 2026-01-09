@@ -50,3 +50,6 @@ logs/
 # ignore files in node_modules/ directory
 node_modules/
 
+.env_dev
+.env_prod
+.env_local
