@@ -124,6 +124,7 @@ class usersfunc {
 	}
 
 
+	
 	async myUserInfo(address) {
 
 		let result ;
@@ -134,6 +135,25 @@ class usersfunc {
 		let eth_amount = '0';
 		let polygon_amount = '0';
 
+
+		
+		const toTokenAmountString = (rawBalance) => {
+		// rawBalance가 null/undefined/"Error"/"" 등일 수 있음
+		if (rawBalance === null || rawBalance === undefined) return "0";
+		if (rawBalance === "Error" || rawBalance === "NOTOK") return "0"; // etherscan류
+		
+		// 숫자 문자열이 아니면 0
+		if (!/^\d+(\.\d+)?$/.test(String(rawBalance))) return "0";
+		
+		// BigNumber로 나눠서 문자열로 반환
+		// (etherscan result는 보통 wei 단위의 정수 문자열)
+		const bn = new BigNumber(String(rawBalance));
+		if (!bn.isFinite() || bn.isNaN()) return "0";
+		
+		return bn.div(new BigNumber(10).pow(18)).toFixed(); // 필요하면 toFixed(6) 등
+		};
+
+		  
 		try{
 			do {			
 
@@ -155,15 +175,20 @@ class usersfunc {
 					let resultPolygon  = JSON.parse(await util.requestHttps(polygonurl));
 					polygonBalance = resultPolygon.result;
 
-					if(tvsBalance != null){
-						tvs_amount = new BigNumber(tvsBalance).div(new BigNumber(10).pow(18)).toNumber();
-					}
-					if(ethBalance != null){
-						eth_amount = new BigNumber(ethBalance).div(new BigNumber(10).pow(18)).toNumber();
-					}
-					if(polygonBalance != null){
-						polygon_amount = new BigNumber(polygonBalance).div(new BigNumber(10).pow(18)).toNumber();
-					}
+					tvs_amount = toTokenAmountString(tvsBalance);
+					eth_amount = toTokenAmountString(ethBalance);
+					polygon_amount = toTokenAmountString(polygonBalance);
+
+
+					// if(tvsBalance != null){
+					// 	tvs_amount = new BigNumber(tvsBalance).div(new BigNumber(10).pow(18)).toNumber();
+					// }
+					// if(ethBalance != null){
+					// 	eth_amount = new BigNumber(ethBalance).div(new BigNumber(10).pow(18)).toNumber();
+					// }
+					// if(polygonBalance != null){
+					// 	polygon_amount = new BigNumber(polygonBalance).div(new BigNumber(10).pow(18)).toNumber();
+					// }
 				}
 
 
